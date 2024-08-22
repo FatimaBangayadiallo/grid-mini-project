@@ -77,6 +77,7 @@ p {
 Main Navbar
 =============
 */
+/* the whole main navbar */
 .main-navbar {
   background-color: var(--darkGrey);
   padding: 0 2rem;
@@ -84,31 +85,27 @@ Main Navbar
 .main-navbar li {
   list-style: none;
 }
-.main-navbar ul {
-  /* padding: 1rem; */
-}
 .main-navbar a {
-  padding: 1rem 0;
   text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
-  color: var(--primaryColor);
-  transition: var(--main-transition);
-  /* background-color: yellowgreen; */
   display: block;
+  padding: 1rem 0;
+  color: var(--primaryColor);
+  letter-spacing: var(--mainSpacing);
+  transition: var(--main-transition);
 }
 .main-navbar a:hover {
   color: var(--mainBlack);
 }
-/* we center the ul when we reach 992px of the screen */
+/* setup  for the navbar on the bigger screen  */
 @media screen and (min-width: 992px) {
   .main-navbar ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     max-width: 1170px;
     margin: 0 auto;
-    /* background-color: #222; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
-  .main-navbar {
+  .main-navbar a {
     text-align: center;
   }
 }
