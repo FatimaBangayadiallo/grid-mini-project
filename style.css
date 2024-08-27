@@ -205,3 +205,9 @@ cards section
   column-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
 }
+/* to controle the rows of the card */
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
